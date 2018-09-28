@@ -23,13 +23,13 @@ class Example(QWidget):
         btn.move(10, 10)
         btn.clicked.connect(sta_simulator)
 
-        btn = QPushButton('2.打开外网绿色征途', self)
+        btn = QPushButton('2.打开外网游戏', self)
         btn.resize(150, 50)
         btn.move(10, 70)
         btn.clicked.connect(sta_simulator)
 
         self.setGeometry(300, 250, 300, 300)
-        self.setWindowIcon(QIcon(r'C:\Users\xiewenhua\Desktop\自用脚本\cc脚本\1'))
+        self.setWindowIcon(QIcon(r'C:\Users\van\Desktop\自用脚本\cc脚本\1'))
         self.setWindowTitle('终极脚本集合')
         self.show()
 
@@ -37,7 +37,7 @@ class Example(QWidget):
         print("PyQt5 button click")
 
 def sta_simulator():
-    name_simulator = r"E:\xwh\simulator\nox_simulator\Nox\bin\Nox.exe"
+    name_simulator = r"E:\van\simulator\nox_simulator\Nox\bin\Nox.exe"
     os.startfile(name_simulator)
 
 
